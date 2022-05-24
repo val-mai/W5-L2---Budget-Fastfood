@@ -58,3 +58,8 @@ button:hover {
     display: flex;
     justify-content: center;
 }
+
+#avviso {
+    color: #ff4142;
+    font-size: 1em;
+}

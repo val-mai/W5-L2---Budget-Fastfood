@@ -53,7 +53,7 @@ function reset() {
     rimanente = 50;
     document.getElementById('totale').innerHTML = somma;
     document.getElementById('rimanente').innerHTML = rimanente + ' €';
-    document.getElementById('saldo').style.color = 'black';
+    document.getElementById('avviso').innerHTML = '';
 }
 
 function aggiorna() {
@@ -61,6 +61,6 @@ function aggiorna() {
     rimanente = rimanente.toFixed(2);
     document.getElementById('rimanente').innerHTML = rimanente + ' €';
     if (rimanente<(budget*0.5)) {
-        document.getElementById('saldo').style.color = '#ff4142';
+        document.getElementById('avviso').innerHTML = 'Stai per esaurire il budget!';
     }
 }
