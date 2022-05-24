@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>Il tuo Menu</h1>
+
+    <div id="prodotti">
+        <div class="card">
+            <img class="img-card" src="" id="foto1">
+            <div class="card-body">
+                <h5 class="card-title" id="nome1">Prodotto</h5>
+                <p class="card-text" id="price1"></p>
+                <button onclick="buy(0)">Acquista</button>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="" id="foto2">
+            <div class="card-body">
+                <h5 class="card-title" id="nome2">Prodotto</h5>
+                <p class="card-text" id="price2"></p>
+                <button onclick="buy(1)">Acquista</button>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="" id="foto3">
+            <div class="card-body">
+                <h5 class="card-title" id="nome3">Prodotto</h5>
+                <p class="card-text" id="price3"></p>
+                <button onclick="buy(2)">Acquista</button>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="" id="foto4">
+            <div class="card-body">
+                <h5 class="card-title" id="nome4">Prodotto</h5>
+                <p class="card-text" id="price4"></p>
+                <button onclick="buy(3)">Acquista</button>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="" id="foto5">
+            <div class="card-body">
+                <h5 class="card-title" id="nome5">Prodotto</h5>
+                <p class="card-text" id="price5"></p>
+                <button onclick="buy(4)">Acquista</button>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="" id="foto6">
+            <div class="card-body">
+                <h5 class="card-title" id="nome6">Prodotto</h5>
+                <p class="card-text" id="price6"></p>
+                <button onclick="buy(5)">Acquista</button>
+            </div>
+        </div>
+    </div>
+    <div id="riepilogo">
+        <div>
+            <h3>Spesa</h3>
+            <p><span id="totale">0</span> €</p>
+        </div>
+        <div id="budget">
+            <h3>Budget</h3>
+            <p><span id="p_budget">50</span> €</p>
+        </div>
+        <div id="saldo">
+            <h3>Budget rimanente</h3>
+            <p id="rimanente">50 €</p>
+        </div>
+    </div>
+    <div id="reset">
+        <button onclick="reset()">RESET</button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
